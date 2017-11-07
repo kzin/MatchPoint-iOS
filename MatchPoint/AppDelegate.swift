@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let token = KeychainSwift().get("token")
         let initialViewController: UIViewController
         
-        if token != "" {
+        if let validToken = token, validToken != "" {
             initialViewController = storyboard.instantiateViewController(withIdentifier: "LoggedIn")
         } else {
             initialViewController = storyboard.instantiateViewController(withIdentifier: "Setup")
