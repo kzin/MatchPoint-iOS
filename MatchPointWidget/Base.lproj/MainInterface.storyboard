@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="MatchPointWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8w-Hs-uMT">
+                                <rect key="frame" x="12" y="12" width="296" height="86"/>
+                                <color key="backgroundColor" red="0.0" green="0.14901960780000001" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="BATER O PONTO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapRegisterButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="8gY-6w-IcH"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2SL-Nw-Hui">
+                                <rect key="frame" x="142" y="37" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se logue no App para poder bater o ponto!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jt4-oD-wdb">
+                                <rect key="frame" x="18" y="35" width="284" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toque para bater novamente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXY-F5-4SN">
+                                <rect key="frame" x="18" y="69" width="284" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="g53-CS-L1b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="H8w-Hs-uMT" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="12" id="1Gm-jT-eXN"/>
+                            <constraint firstAttribute="trailing" secondItem="EXY-F5-4SN" secondAttribute="trailing" constant="18" id="3p9-fq-DUL"/>
+                            <constraint firstItem="jt4-oD-wdb" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="2" id="9BJ-WC-RsT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jt4-oD-wdb" secondAttribute="trailing" constant="2" id="AFR-1g-COB"/>
+                            <constraint firstItem="jt4-oD-wdb" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="35" id="Cio-Zx-3s4"/>
+                            <constraint firstItem="H8w-Hs-uMT" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="12" id="E10-u5-riO"/>
+                            <constraint firstItem="2SL-Nw-Hui" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="142" id="OHH-6e-1Yl"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="H8w-Hs-uMT" secondAttribute="bottom" constant="12" id="YLz-D6-dEN"/>
+                            <constraint firstItem="2SL-Nw-Hui" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="37" id="bG5-48-hCg"/>
+                            <constraint firstAttribute="trailing" secondItem="2SL-Nw-Hui" secondAttribute="trailing" constant="141" id="dtx-yH-zZF"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="2SL-Nw-Hui" secondAttribute="bottom" constant="36" id="qcq-pL-P1r"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="EXY-F5-4SN" secondAttribute="bottom" constant="20" id="swm-yC-hmP"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="jt4-oD-wdb" secondAttribute="bottom" constant="34" id="tFe-Iu-jSf"/>
+                            <constraint firstAttribute="trailing" secondItem="H8w-Hs-uMT" secondAttribute="trailing" constant="12" id="tyN-4A-fi6"/>
+                            <constraint firstItem="EXY-F5-4SN" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="18" id="wIh-eI-B6N"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="110"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="2SL-Nw-Hui" id="smt-yq-vus"/>
+                        <outlet property="loginMessage" destination="jt4-oD-wdb" id="Gnx-gk-IFY"/>
+                        <outlet property="registerButton" destination="H8w-Hs-uMT" id="Pz5-A2-7zZ"/>
+                        <outlet property="tryAgainLabel" destination="EXY-F5-4SN" id="Fre-xc-rd4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="129.53523238380811"/>
+        </scene>
+    </scenes>
+</document>
