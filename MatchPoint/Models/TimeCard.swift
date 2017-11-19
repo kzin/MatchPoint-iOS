@@ -17,11 +17,11 @@ struct TimeCard: Mappable {
     var originalAddress: String?
     var locationEdited: Bool?
     var accuracy: Int?
-    
+
     init?(map: Map) {
-        
+
     }
-    
+
     mutating func mapping(map: Map) {
         latitude            <- map["latitude"]
         longitude           <- map["longitude"]

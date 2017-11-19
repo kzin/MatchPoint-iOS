@@ -22,7 +22,7 @@ extension PontoMaisService: TargetType {
             return "/api/time_cards/register"
         }
     }
-    
+
     var method: Moya.Method {
         switch self {
         case .login, .register:
@@ -30,10 +30,9 @@ extension PontoMaisService: TargetType {
         }
     }
 
-    
     var task: Task {
         switch self {
-        case .register(_,_,_):
+        case .register(_, _, _):
             return .requestParameters(parameters: ["time_card": [
             "latitude": -23.6015042,
             "longitude": -46.694538,
@@ -58,29 +57,27 @@ extension PontoMaisService: TargetType {
         case let .login(login, password):
             return .requestParameters(parameters: ["login": login, "password": password],
                                       encoding: JSONEncoding.default)
-            
+
         }
-        
+
     }
-    
+
     var sampleData: Data {
         return Data()
     }
-    
+
     var headers: [String: String]? {
         var customHeaders = ["Content-type": "application/json"]
-        
+
         switch self {
         case let .register(token, client, email):
             customHeaders["access-token"] = token
             customHeaders["client"] = client
             customHeaders["uid"] = email
         default:
-           return customHeaders 
+           return customHeaders
         }
         return customHeaders
     }
-    
-    
 
 }

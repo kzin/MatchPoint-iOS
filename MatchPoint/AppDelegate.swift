@@ -13,16 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        
+
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
+
         let token = KeychainSwift().get("token")
         let initialViewController: UIViewController
-        
+
         if let validToken = token, validToken != "" {
             initialViewController = storyboard.instantiateViewController(withIdentifier: "LoggedIn")
         } else {
@@ -31,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
-        
+
         return true
     }
 
@@ -57,6 +56,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
-
