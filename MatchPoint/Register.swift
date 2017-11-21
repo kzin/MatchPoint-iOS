@@ -12,11 +12,11 @@ struct Register: Mappable {
     var path: String?
     var device: Device?
     var appVersion: String?
-    
+
     init?(map: Map) {
-        
+
     }
-    
+
     mutating func mapping(map: Map) {
         timeCard    <- map["time_card"]
         path        <- map["_path"]

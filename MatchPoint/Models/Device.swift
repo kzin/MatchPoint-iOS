@@ -14,11 +14,11 @@ struct Device: Mappable {
     var platform: String?
     var uuid: String?
     var version: String?
-    
+
     init?(map: Map) {
-        
+
     }
-    
+
     mutating func mapping(map: Map) {
         cordova         <- map["cordova"]
         manafacturer    <- map["manafacturer"]
