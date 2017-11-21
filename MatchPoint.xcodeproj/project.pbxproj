@@ -737,7 +737,7 @@
 				INFOPLIST_FILE = MatchPoint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointApp;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointAppRod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3170c765-9681-4986-a332-fec9d4fde49c";
 				PROVISIONING_PROFILE_SPECIFIER = "Matchpoint Dist";
@@ -759,7 +759,7 @@
 				INFOPLIST_FILE = MatchPoint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointApp;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointAppRod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3170c765-9681-4986-a332-fec9d4fde49c";
 				PROVISIONING_PROFILE_SPECIFIER = "Matchpoint Dist";
@@ -813,7 +813,7 @@
 				INFOPLIST_FILE = MatchPointWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointApp.MatchPointWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointAppRod.MatchPointWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -833,7 +833,7 @@
 				INFOPLIST_FILE = MatchPointWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointApp.MatchPointWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointAppRod.MatchPointWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f773ae40-8a16-42cd-8b51-d51ee99549cf";
 				PROVISIONING_PROFILE_SPECIFIER = "Matchpoint Widget";
