@@ -320,9 +320,9 @@
 				TargetAttributes = {
 					A017F3C01F69B528007BB2FA = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 83C3V38WSB;
+						DevelopmentTeam = DK2FD42JNK;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -331,16 +331,16 @@
 					};
 					A017F3D41F69B528007BB2FA = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 83C3V38WSB;
+						DevelopmentTeam = DK2FD42JNK;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A017F3C01F69B528007BB2FA;
 					};
 					A017F3F61F69C7F0007BB2FA = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 83C3V38WSB;
+						DevelopmentTeam = DK2FD42JNK;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -731,16 +731,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MatchPoint/MatchPoint.entitlements;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK2FD42JNK;
 				INFOPLIST_FILE = MatchPoint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointAppRod;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3170c765-9681-4986-a332-fec9d4fde49c";
-				PROVISIONING_PROFILE_SPECIFIER = "Matchpoint Dist";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -753,16 +753,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MatchPoint/MatchPoint.entitlements;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK2FD42JNK;
 				INFOPLIST_FILE = MatchPoint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointAppRod;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3170c765-9681-4986-a332-fec9d4fde49c";
-				PROVISIONING_PROFILE_SPECIFIER = "Matchpoint Dist";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -774,7 +774,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 83C3V38WSB;
+				DEVELOPMENT_TEAM = DK2FD42JNK;
 				INFOPLIST_FILE = MatchPointTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointTests;
@@ -791,7 +791,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 83C3V38WSB;
+				DEVELOPMENT_TEAM = DK2FD42JNK;
 				INFOPLIST_FILE = MatchPointTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointTests;
@@ -808,12 +808,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MatchPointWidget/MatchPointWidget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK2FD42JNK;
 				INFOPLIST_FILE = MatchPointWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointAppRod.MatchPointWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointApp.MatchPointWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -827,16 +827,16 @@
 			baseConfigurationReference = FC92843F5A18515FF96BA0D2 /* Pods-MatchPointWidget.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MatchPointWidget/MatchPointWidget.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK2FD42JNK;
 				INFOPLIST_FILE = MatchPointWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointAppRod.MatchPointWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucascardinali.MatchPointApp.MatchPointWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f773ae40-8a16-42cd-8b51-d51ee99549cf";
-				PROVISIONING_PROFILE_SPECIFIER = "Matchpoint Widget";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
